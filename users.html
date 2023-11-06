@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kefene Web</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="orders.css">
+    <link rel="stylesheet" href="users.css">
+</head>
+
+<body>
+    <div id="root">
+        <div>
+            <div class="Topbar_home_">
+                <div class="Topbar_LeftMenu">
+                    <div class="Topbar_LogoWrapper">
+                        <img src="logo.58169365.png" alt="Logo">
+                        <p class="Topbar_BrandName">Kafene</p>
+                    </div>
+
+                    <nav>
+                        <a id="ordersLink" class="Topbar_MenuItem" href="orders.html">Orders</a>
+                        <a id="productsLink" class="Topbar_MenuItem" href="product.html">Products</a>
+                        <a id="usersLink" class="Topbar_MenuItem" href="users.html">Users</a>
+                    </nav>
+
+                    <a class="Topbar_rightmenu" href="index.html">Logout</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <main class="Users-MainContainer">
+        <div class="UserList-PageWrapper">
+            <h1 class="UserList-MainHeading">Users</h1>
+            <div class="UserList-OrdersWrapper">
+                <form class="UserList-FilterWrapper">
+                    <input class="UserList_SearchBox" type="search" placeholder="Search by Name" id="searchInput">
+                    <input type="reset" class="UserList-Button" value="Reset" id="resetButton">
+                </form>
+                <div style="width: 100%;">
+                    <table class="UserList-OrderTable">
+                        <tr>
+                            <th>ID</th>
+                            <th>User Avatar</th>
+                            <th>Full Name</th>
+                            <th style="min-width: 100px;">DoB</th>
+                            <th>Gender</th>
+                            <th>Current Location</th>
+                        </tr>
+                        <tbody id="usersTableBody">
+                            <!-- Data fetched dynamically with jQuery -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="users.js"></script>
+    
+</body>
+</html>

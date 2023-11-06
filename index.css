@@ -1,0 +1,98 @@
+*{
+    font-family: 'Poppins', sans-serif;
+   
+}
+html {
+    background-color: #F6F7FB;
+}
+
+.Topbar_home_{
+    width: 100%;
+    padding: 0 48px;
+    box-sizing: border-box;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    box-shadow: 0 2px 4px #ccc;
+    background-color: #fff;
+    justify-content: space-between;
+}
+#ordersLink.active,
+#productsLink.active,
+#usersLink.active {
+    color: #20b883;
+    border-bottom: 3px solid #20b883;
+}
+.Topbar_LeftMenu{
+    display: flex;
+    align-items: center;
+}
+
+.Topbar_LogoWrapper{
+    display: flex;
+    align-items: center;
+    margin-right: 36px;
+}
+.Topbar_BrandName{
+    font-size: 24px;
+    letter-spacing: -1px;
+    font-weight: 500;
+    margin: 0;
+    color: rgba(0,0,0,.8);
+}
+
+.Topbar_MenuItem {
+    display: inline-block;
+    text-decoration: none;
+    color: rgba(0,0,0,.8);
+    padding: 24px 0 16px;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: .6px;
+    margin: 0 10px;
+}
+nav a:hover{
+    color: #20b883;
+    border-bottom: 2px solid #20b883;
+}
+
+.App_MainContainer{
+    margin-top: 100px;
+}
+.LoginPage_LoginForm{
+    width: 100%;
+    max-width: 500px;
+    border-radius: 6px;
+    margin: 0 auto;
+    padding: 32px;
+    box-sizing: border-box;
+    display: flex;
+    background-color: #fff;
+    flex-direction: column;
+    box-shadow: 0 0 6px #ccc;
+}
+.LoginPage_InputField{
+    width: 100%;
+    padding-top: 16px;
+    font-size: 14px;
+    box-sizing: border-box;
+    border: 0;
+    border-bottom: 2px solid #8c8c8c;
+    margin-bottom: 16px;
+    outline: none;
+}
+.LoginPage_Button{
+    display: inline-block;
+    border-radius: 30px;
+    padding: 14px 36px;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    background-color: #20b883;
+    color: #fff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    margin-top: 24px;
+}

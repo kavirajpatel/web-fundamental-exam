@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kafene Web</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div id="root">
+        <div>
+            <div class="Topbar_home_">
+                <div class="Topbar_LeftMenu">
+                    <div class="Topbar_LogoWrapper">
+                        <img src="logo.58169365.png" alt="Logo">
+                        <p class="Topbar_BrandName">Kafene</p>
+                    </div>
+                    <nav>
+                        <a id="ordersLink" class="Topbar_MenuItem" href="#">Orders</a>
+                        <a id="productsLink" class="Topbar_MenuItem" href="#">Products</a>
+                        <a id="usersLink" class="Topbar_MenuItem" href="#">Users</a>
+                    </nav>
+                    
+                </div>
+            </div>
+            <main class="App_MainContainer">
+                <div>
+                    <form class="LoginPage_LoginForm" onsubmit="login(event)">
+                        <h1 style="background-color: #fff;">Sign In</h1>
+                        <input style="background-color: #fff;" class="LoginPage_InputField" type="text" name="username" id="username" placeholder="Enter Username">
+                        <input style="background-color: #fff;" class="LoginPage_InputField" type="password" name="password" id="password" placeholder="Enter Password">
+                        <input class="LoginPage_Button" type="submit" value="Login">
+                    </form>
+                </div>
+            </main>
+        </div>
+    </div>
+
+
+<script src="index.js"></script>
+</body>
+</html>
